@@ -1,16 +1,65 @@
-# 🎈 Blank app template
+import streamlit as st
 
-A simple Streamlit app template for you to modify!
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+st.set_page_config(
+    page_title="Mestrado - Cloud",
+    layout="wide"
+)
 
-### How to run it on your own machine
 
-Prerequisite: install `uv` if you don't already have it.
+st.title("Mestrado - Cloud")
+st.subheader("Home")
 
-```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+
+banner_url = "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80"
+st.image(banner_url, use_container_width=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.markdown(
+        """
+        <div style="background-color: #FFF2B2; padding: 24px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; min-height: 110px;">
+            <div>
+                <h3 style="margin: 0; color: #1E1E1E; font-size: 20px; font-weight: bold;">Save 35%</h3>
+                <p style="margin: 4px 0 0 0; color: #555; font-size: 13px;">On your first repeat delivery order</p>
+            </div>
+            <div style="font-size: 38px;">🚚</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with col2:
+    st.markdown(
+        """
+        <div style="background-color: #E2D0E6; padding: 24px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; min-height: 110px;">
+            <div>
+                <h3 style="margin: 0; color: #1E1E1E; font-size: 20px; font-weight: bold;">Latest Deals</h3>
+                <p style="margin: 4px 0 0 0; color: #555; font-size: 13px;">Save up to $393/year</p>
+            </div>
+            <div style="font-size: 38px;">🐱</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with col3:
+    st.markdown(
+        """
+        <div style="background-color: #D3F2F8; padding: 24px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; min-height: 110px;">
+            <div>
+                <h3 style="margin: 0; color: #1E1E1E; font-size: 20px; font-weight: bold;">Top Rate Products</h3>
+                <p style="margin: 4px 0 0 0; color: #555; font-size: 13px;">Recommended pet favourites</p>
+            </div>
+            <div style="font-size: 38px;">🦴</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 1. Sync the dependencies
 
