@@ -14,7 +14,7 @@ st.write(
 
 # 1. Bloco / Banner Central de Imagem
 st.image(
-    "https://pixabay.com/pt/images/search/banner/",
+    "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80",
     use_container_width=True
 )
 
