@@ -9,12 +9,12 @@ st.set_page_config(
 # Título da aplicação
 st.title("🎈 Mestrado - Computação nas Nuvens")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Construção de app em cloud [docs.streamlit.io](https://docs.streamlit.io/)."
 )
 
 # 1. Bloco / Banner Central de Imagem
 st.image(
-    "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80",
+    "https://pixabay.com/pt/images/search/banner/",
     use_container_width=True
 )
 
