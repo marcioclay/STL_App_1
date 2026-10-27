@@ -1,24 +1,27 @@
 import streamlit as st
 
-# Configura a página para ocupação ampla (banner horizontal completo)
+# Configuração da página em modo amplo (wide)
 st.set_page_config(
     page_title="Mestrado - Computação nas Nuvens",
     layout="wide"
 )
 
-# Título da aplicação
+# Título e cabeçalho
 st.title("🎈 Mestrado - Computação nas Nuvens")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
 
-# 1. Bloco / Banner Central de Imagem
-st.image(
-    "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80",
-    use_container_width=True
+# 1. Imagem Central em Formato Banner (Altura Ajustada a 280px)
+st.markdown(
+    """
+    <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 25px;">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80" 
+             style="width: 100%; max-height: 280px; object-fit: cover; border-radius: 12px;">
+    </div>
+    """,
+    unsafe_allow_html=True
 )
-
-st.markdown("<br>", unsafe_allow_html=True)
 
 # 2. Três blocos coloridos inferiores em 3 colunas
 col1, col2, col3 = st.columns(3)
